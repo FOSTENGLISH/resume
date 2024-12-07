@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anna Song</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+            width: 100%;
+            max-width: 1200px;
+            margin-bottom: 40px;
+        }
+
+        .header img {
+            width: 150px;
+            height: auto;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        .header .career {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .career p {
+            margin: 0;
+            padding: 5px;
+            background-color: #f1f1f1;
+            border-radius: 5px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+        .photo-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .photo-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .photo-card p {
+            margin: 0;
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="profile_image.png" alt="Anna Song">
+        <div class="career">
+            <p>포스트잉글리쉬 Anna원장 </p>
+            <p>Macquarie University 영어교육석사 </p>
+            <p>California State University Jr.TESOL</p>
+            <p>서강대 국제대학원 석사 </p>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Card 1 -->
+        <div class="photo-card">
+            <img src="회사.png" alt="Photo 1">
+            <p>헤럴드아카데미 선임연구원</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="photo-card">
+            <img src="NIE.png" alt="Photo 2">
+            <p>NIE(신문활용교육)전국대회 대상 교육부장관상</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="photo-card">
+            <img src="강의.png" alt="Photo 3">
+            <p>인천시 교육연수원 초.중등 영어교사 강의 </p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="photo-card">
+            <img src="강연.png" alt="Photo 4">
+            <p>중등 학부모 대상 영자신문교육 강연</p>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="photo-card">
+            <img src="인터뷰.png" alt="Photo 5">
+            <p>소상공인 홍보지원센터 캠페인 선정 인터뷰</p>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="photo-card">
+            <img src="ESU.png" alt="Photo 6">
+            <p>ESU KOREA 전국영어대회 수상</p>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="photo-card">
+            <img src="성과.png" alt="Photo 7">
+            <p>2013년~2024년 포스트잉글리쉬 성과</p>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="photo-card">
+            <img src="코딩자격증.png" alt="Photo 8">
+            <p>한국생산성본부 코딩 자격증</p>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="photo-card">
+            <img src="인공지능교육.png" alt="Photo 9">
+            <p>정보통신 산업진흥원 인공지능교육 수료</p>
+        </div>
+    </div>
+</body>
+</html>
+
+
