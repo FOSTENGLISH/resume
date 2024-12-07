@@ -33,8 +33,8 @@
         }
 
         .header .career {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
+            display: flex;
+            flex-direction: column; /* 수직으로 배치 */
             gap: 10px;
             font-size: 14px;
             color: #555;
@@ -50,10 +50,10 @@
         }
 
         .container {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-            width: 90%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
             max-width: 1200px;
             margin: 20px auto;
         }
@@ -68,6 +68,8 @@
             border-radius: 8px;
             padding: 10px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            width: 80%; /* 사진을 화면에 맞게 크기 조정 */
         }
 
         .photo-card img {
@@ -82,39 +84,13 @@
             font-size: 14px;
             color: #555;
         }
-        .header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-    width: 100%;
-    max-width: 1200px;
-    margin-bottom: 40px;
-}
 
-.header img {
-    width: 150px;
-    height: auto;
-    border-radius: 50%;
-    margin-right: 20px;
-}
-
-.header .career {
-    display: flex;
-    flex-direction: column; /* 수직으로 배치 */
-    gap: 10px;
-    font-size: 14px;
-    color: #555;
-}
-
-.career p {
-    margin: 0;
-    padding: 5px;
-    background-color: #f1f1f1;
-    border-radius: 5px;
-    text-align: center;
-    border: 1px solid #ddd;
-}
+        /* 모바일 화면에서 각 카드를 전체 너비로 표시 */
+        @media (max-width: 768px) {
+            .photo-card {
+                width: 90%; /* 모바일에서 더 넓은 사진 크기 */
+            }
+        }
     </style>
 </head>
 <body>
@@ -122,7 +98,7 @@
         <img src="profile_image.png" alt="Anna Song">
         <div class="career">
             <p>포스트잉글리쉬 Anna원장 </p>
-            <p>Macquarie University TESOL 영어교육석사 </p>
+            <p>Macquarie University 영어교육석사 </p>
             <p>California State University Jr.TESOL</p>
             <p>서강대 국제대학원 석사 </p>
         </div>
@@ -185,5 +161,6 @@
     </div>
 </body>
 </html>
+
 
 
